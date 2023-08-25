@@ -33,10 +33,6 @@ export const links = [
         {
           name: 'ICBHI',
           icon: <AiOutlineShoppingCart />,
-        },
-        {
-          name: 'Coswara',
-          icon: <IoMdContacts />,
         }
       
       ],
@@ -45,32 +41,40 @@ export const links = [
       title: 'Peformances',
       links: [
         {
-          name: 'Métriques',
+          name: 'Classification des sons',
           icon: <AiOutlineCalendar />,
         },
         {
-          name: 'Comparaison',
+          name: 'Classification des pathologies',
           icon: <BsKanban />,
-        },
-        {
-          name: 'editor',
-          icon: <FiEdit />,
-        },
-        {
-          name: 'color-picker',
-          icon: <BiColorFill />,
-        },
+        }
+      
       ],
     },
     {
-      title: 'tester le modele',
+      title: 'effectuer un test avec le split officiel',
       links: [
         {
-          name: 'modele charge',
+          name: 'sons',
           icon: <AiOutlineStock />,
         },
         {
-          name: 'from sractch',
+          name: 'pathologies',
+          icon: <AiOutlineAreaChart />,
+        },
+  
+    
+      ],
+    },
+    {
+      title: 'effectuer un test avec le split 80-20',
+      links: [
+        {
+          name: 'son',
+          icon: <AiOutlineStock />,
+        },
+        {
+          name: 'pathologie',
           icon: <AiOutlineAreaChart />,
         },
   

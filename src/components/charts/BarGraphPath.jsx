@@ -5,7 +5,6 @@ import {
     Chart as ChartJS,
     registerables,
   } from 'chart.js';
-
 ChartJS.register(...registerables);
 const BarGraph = () => {
     const [selectedDataset, setSelectedDataset] = useState('A'); // Initial selection (can be 'A', 'B', or 'C')

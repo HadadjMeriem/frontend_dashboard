@@ -42,7 +42,23 @@ module.exports = {
           'hero-pattern':
             "url('https://c8.alamy.com/comp/2C04XNH/online-doctor-appointment-female-doctor-on-the-smartphone-screen-vector-illustration-in-flat-style-2C04XNH.jpg')",
         },
+        '.circle-ring': {
+          position: 'relative',
+        },
+        '.circle-progress': {
+          position: 'absolute',
+          top: '0',
+          left: '0',
+          width: '100%',
+          height: '50%',
+          backgroundColor: '#38a169',
+          clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+          transformOrigin: 'center bottom',
+          transition: 'transform 0.3s ease-in-out',
+        },
       },
+      
     },
     plugins: [],
+    
   };

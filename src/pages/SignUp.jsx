@@ -5,7 +5,6 @@ import login from "../assets/login.jpg";
 import { useNavigate } from "react-router-dom";
 import jwt_decode from "jwt-decode";
 import lung from '../data/lung.svg'
-
 const SignUp= () => {
   return (
     <section className="h-full  bg-neutral-200 dark:bg-neutral-700">
@@ -52,7 +51,6 @@ const SignUp= () => {
                     </Header>
                   </div>
                 <FormSignup>
-
                 </FormSignup>
 
                 </div>

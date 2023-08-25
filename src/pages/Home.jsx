@@ -10,6 +10,9 @@ import Navbar from "../components/Navbar";
 import Accueil from "./Accueil"
 import {links} from '../data/utils'
 import { useStateContext } from "../context/contextProvider";
+import TestSound from "./TestSound";
+import Performances from "./Performances";
+import PerformancesPathologies from "./PerformancesPathologies";
 const Home = () => {
   const userInfo = localStorage.getItem('user') !== 'undefined' ? JSON.parse(localStorage.getItem('user')) : localStorage.clear();
   {console.log(userInfo)}
@@ -59,7 +62,12 @@ const Home = () => {
                     <Route path="/Performance" element="Performance"></Route>
                     <Route path="/Admin/:userId" element={<AdminProfile></AdminProfile>}></Route>
                     <Route path="/ICBHI" element={<ICBHI></ICBHI>}></Route>
-
+                    <Route path="/sons" element={<TestSound user={userInfo} split={'officiel'} type={'son'}></TestSound>}></Route>
+                    <Route path="/pathologies" element={<TestSound user={userInfo} split={'officiel'} type={'pathologie'}></TestSound>}></Route>
+                    <Route path="/son" element={<TestSound user={userInfo} split={'cross'}type={'son'} ></TestSound>}></Route>
+                    <Route path="/pathologie" element={<TestSound user={userInfo}  split={'cross'} type={'pathologie'}></TestSound>}></Route>
+                    <Route path="/Classification des sons" element={<Performances ></Performances>}></Route>
+                    <Route path="/Classification des pathologies" element={<PerformancesPathologies ></PerformancesPathologies>}></Route>
                   
                     
                 </Routes>
