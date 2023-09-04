@@ -90,13 +90,13 @@ const Performances = () => {
   
     </div>
     <div className="container mx-auto p-8">
-    <h1 className="text-3xl font-semibold mb-8">ML Model Performance Dashboard</h1>
+    <h1 className="text-3xl font-semibold mb-8">Performances du modèle</h1>
 
     <div className="flex flex-wrap -mx-4">
-    <PerformanceCard metricName="Precision" percent={activeBtn === 'Split officiel' ? dataOff.metrics.precision : dataCross.metrics.precision} color={'rgb(216,191,216)'} textColor={'rgb(216,191,216)'} />
+    <PerformanceCard metricName="Spécificité" percent={activeBtn === 'Split officiel' ? dataOff.metrics.precision : dataCross.metrics.precision} color={'rgb(216,191,216)'} textColor={'rgb(216,191,216)'} />
     <PerformanceCard metricName="Accuracy" percent={activeBtn === 'Split officiel' ? dataOff.metrics.accuracy : dataCross.metrics.accuracy} color={'#fdba74'} textColor={'#fdba74'} />
-    <PerformanceCard metricName="Recall" percent={activeBtn === 'Split officiel' ? dataOff.metrics.recall : dataCross.metrics.recall} color={'#f97316'} textColor={'#f97316'} />
-    <PerformanceCard metricName="ICBHI Score" percent={activeBtn === 'Split officiel' ? dataOff.metrics.ICBHI : dataCross.metrics.ICBHI} color={'#2e1065'} textColor={'#2e1065'} />
+    <PerformanceCard metricName="Sensitivité" percent={activeBtn === 'Split officiel' ? dataOff.metrics.recall : dataCross.metrics.recall} color={'#f97316'} textColor={'#f97316'} />
+    <PerformanceCard metricName="Score ICBHI" percent={activeBtn === 'Split officiel' ? dataOff.metrics.ICBHI : dataCross.metrics.ICBHI} color={'#2e1065'} textColor={'#2e1065'} />
     </div>
 
   </div>
@@ -104,7 +104,7 @@ const Performances = () => {
   <div className="max-w-5xl mx-auto">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
     <div className="bg-white rounded-lg shadow-md p-6">
-      <h2 className="text-lg font-semibold mb-4">Confusion Matrix</h2>
+      <h2 className="text-lg font-semibold mb-4">Matrice de confusion</h2>
       <div className="max-w-full">
          <img className='w-full h-full'  src={activeBtn === 'Split officiel' ? imageData :imageDataCross}
           alt="Confusion Matrix"
@@ -114,7 +114,7 @@ const Performances = () => {
     </div>
 
     <div className="bg-white rounded-lg shadow-md p-6">
-      <h2 className="text-lg font-semibold mb-4">Precision per Class</h2>
+      <h2 className="text-lg font-semibold mb-4">Précision par classe</h2>
       {console.log(Object.values(precisionData))}
      
       <div className='h-full w-full'>

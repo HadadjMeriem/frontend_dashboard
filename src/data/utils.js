@@ -4,49 +4,38 @@ import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, Fi
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
-
-
-
-
-
-
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
 import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
+import {AiOutlineHome} from 'react-icons/ai'
+import {BsDatabaseCheck} from 'react-icons/bs'
+import {BsLungs} from 'react-icons/bs'
+import {CgPerformance} from 'react-icons/cg'
+import {FaDisease} from 'react-icons/fa'
 export const links = [
-    {
-      title: 'Accueil',
-      links: [
-        {
-          name: 'Accueil',
-          icon: <FiShoppingBag />,
-        },
-      ],
-    },
-  
+  {
+    title: 'Peformances',
+    links: [
+      {
+        name: 'Classification des sons',
+        icon: <CgPerformance />,
+      },
+      {
+        name: 'Classification des pathologies',
+        icon: <CgPerformance />,
+      }
+    
+    ],
+  },
     {
       title: 'Données utilisées',
       links: [
         {
           name: 'ICBHI',
-          icon: <AiOutlineShoppingCart />,
-        }
-      
-      ],
-    },
-    {
-      title: 'Peformances',
-      links: [
-        {
-          name: 'Classification des sons',
-          icon: <AiOutlineCalendar />,
-        },
-        {
-          name: 'Classification des pathologies',
-          icon: <BsKanban />,
+          icon: <BsDatabaseCheck />,
         }
       
       ],
@@ -56,11 +45,11 @@ export const links = [
       links: [
         {
           name: 'sons',
-          icon: <AiOutlineStock />,
+          icon: <BsLungs />,
         },
         {
           name: 'pathologies',
-          icon: <AiOutlineAreaChart />,
+          icon: <FaDisease />,
         },
   
     
@@ -71,11 +60,11 @@ export const links = [
       links: [
         {
           name: 'son',
-          icon: <AiOutlineStock />,
+          icon: <BsLungs />,
         },
         {
           name: 'pathologie',
-          icon: <AiOutlineAreaChart />,
+          icon: <FaDisease />,
         },
   
     
@@ -123,7 +112,7 @@ export const links = [
         type:"email",
         autoComplete:"email",
         isRequired:true,
-        placeholder:"Email address"   
+        placeholder:"Adresse mail"   
     },
     {
         labelText:"Password",
@@ -133,7 +122,7 @@ export const links = [
         type:"password",
         autoComplete:"current-password",
         isRequired:true,
-        placeholder:"Password"   
+        placeholder:"Mot de passe"   
     }
 ]
 

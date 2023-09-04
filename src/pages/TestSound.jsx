@@ -115,7 +115,7 @@ const TestSound= ({user,type,split}) => {
         className="max-w-full h-auto mb-8"
       />
 
-      <h2 className="text-2xl font-bold mb-4 text-center text-purple-700">
+      <h2 className="text-2xl font-bold mb-4 text-center text-indigo-800">
         Classification des sons respiratoires
       </h2>
       <div className="flex justify-center">
@@ -136,10 +136,10 @@ const TestSound= ({user,type,split}) => {
         onClick={handleFileUpload}
         disabled={!selectedFile}
         className={`w-1/2  p-3 rounded-lg ${
-          selectedFile ? 'bg-purple-700 text-white cursor-pointer' : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+          selectedFile ? 'bg-indigo-800 text-white cursor-pointer' : 'bg-gray-300 text-gray-500 cursor-not-allowed'
         }`}
       >
-        Classify
+        Analyser
       </button>
       
       </div>
@@ -158,9 +158,9 @@ const TestSound= ({user,type,split}) => {
           <div className="flex justify-center">
           <img className='rounded-lg w-50 h-60' src={lung}></img>
           </div>
-          <p><strong>Prediction:</strong> {classificationResult}</p>
-          <p><strong>Real Value:</strong> {realValue}</p>
-          <p><strong>Confidence:</strong> {classificationResult}</p>
+          <p><strong>Classe prédite:</strong> {classificationResult}</p>
+          <br></br>
+          <p><strong>Classe réelle:</strong> {realValue}</p>
           <br></br>
           <div className="flex justify-between">
           <button

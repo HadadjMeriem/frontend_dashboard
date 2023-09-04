@@ -82,15 +82,12 @@ const LoginV2 = () => {
                     Notre application vous permet d'analyser efficacement les sons pulmonaires
                   </h4>
                   <p className="text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Notre application novatrice de classification des sons et des pathologies respiratoires exploite les avancées de l'intelligence artificielle pour offrir une solution précieuse dans le domaine médical. En utilisant des techniques de traitement du signal avancées et des modèles d'apprentissage automatique sophistiqués, notre application permet d'analyser les enregistrements audio de sons respiratoires et d'identifier avec précision une gamme de pathologies pulmonaires. Que ce soit pour détecter des signes précoces de maladies respiratoires, surveiller la progression de conditions existantes ou fournir un outil de diagnostic non invasif, notre application fournit une évaluation rapide et fiable, offrant un soutien essentiel aux professionnels de la santé dans leur prise de décision clinique.
                   </p>
-                  <div className="w-full h-full mt-20 ">
+                  <div className="w-full h-1/2 mt-20 ">
                  <img
                  src={lung}
-                   className="w-full h-full  mt-20"
+                   className="w-full h-1/2  mt-20"
                  />
                   </div>
                 </div>
